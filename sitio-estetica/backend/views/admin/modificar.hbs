@@ -1,0 +1,24 @@
+<div class="container" style="margin:100px auto">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4>Modificar promo</h4>
+            <form action="/admin/promos/modificar" method="post">
+            <input type="hidden" value="{{promo.id}}" name="id">
+        
+                <div class="mb-3 row">
+                    <textarea type="text" class="form-control" placeholder="Descripcion de la promo" name="promo">{{promo.promo}}</textarea>
+                </div>
+                <div class="mb-3 row">
+                    <textarea type="text" class="form-control" placeholder="Precio" name="precio">{{promo.precio}}</textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar cambios</button>
+            </form>
+            {{#if error}}
+            <p>{{message}}</p>
+            {{/if}}
+
+        </div>
+
+    </div>
+
+</div>
