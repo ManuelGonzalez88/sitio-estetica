@@ -67,7 +67,7 @@ router.post('/modificar', async (req, res, next) => {
     }
   
   await promosModel.modificarPromo(obj, req.body.id);
-  res.redirect('admin/promos');
+  res.redirect('/admin/promos');
 } catch (error) {
     console.log(error)
     res.render('admin/modificar', {
