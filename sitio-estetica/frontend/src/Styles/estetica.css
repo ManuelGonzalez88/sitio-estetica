@@ -82,7 +82,7 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(159, 154, 120);
     text-align: center;
     margin-top: 30px;
     padding: 50px;
@@ -230,4 +230,24 @@ h4 {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
+}
+
+
+/* estilos pagina promos */
+.promos {
+    border: 2px rgb(64, 61, 61) solid;
+    border-radius: 20px;
+    padding: 10px;
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.56);
+    -webkit-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.56);
+}
+
+.promos img {
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
 }

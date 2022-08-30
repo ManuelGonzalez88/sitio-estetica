@@ -9,9 +9,9 @@ router.get('/promos', async function (req, res, next) {
     promos = promos.map(promos => {
         if (promos.img_id) {
             const imagen = cloudinary.url(promos.img_id, {
-                width: 960,
+                width: 200,
                 height: 200,
-                crop: 'fill'
+                crop: 'pad'
             });
             return {
                 ...promos,
