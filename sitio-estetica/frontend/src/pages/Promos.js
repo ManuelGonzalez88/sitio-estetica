@@ -9,7 +9,7 @@ const Promos = (props) => {
     useEffect(() => {
         const cargarPromos = async () => {
             setLoading(true);
-            const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/novedades`);
+            const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/promos`);
             setPromos(response.data);
             setLoading(false);
         };
